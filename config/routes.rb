@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   resources :products, only: [:index, :show]
   resources :categories, only: [:show]
+  resources :about, only: [:index] #get the route for the about page which is /about and then show the index page
 
   resource :cart, only: [:show] do
     post   :add_item
