@@ -18,6 +18,10 @@ Rails.application.routes.draw do
     resources :products, except: [:edit, :update, :show]
   end
 
+  #resources mean that we are creating a route for the resource, in this case the resource is products 
+  #only means that we are only creating the routes for the index and show actions 
+  #show means /products/:id where :id is the show action and index is /products
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
