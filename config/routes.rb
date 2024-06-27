@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   namespace :admin do
     root to: 'dashboard#show'
     resources :products, except: [:edit, :update, :show]
+    resources :categories, except: [:edit, :update, :show]
   end
 
   #resources mean that we are creating a route for the resource, in this case the resource is products 
