@@ -5,7 +5,7 @@ RSpec.describe Product, type: :model do
     # validation tests/examples here
    
     it 'all values are validated' do
-     @category = Category.new(name: "Books")
+      @category = Category.new(name: "Books")
       @product = Product.new(name: "A letter from an alien", price_cents: 1000, quantity: 2, category: @category)
       expect(@product).to be_valid
       expect(@product.errors.full_messages).to be_empty
