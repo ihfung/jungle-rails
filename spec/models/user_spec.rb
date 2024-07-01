@@ -42,7 +42,7 @@ RSpec.describe User, type: :model do
     end
 
     it "Invalid user with same email" do
-      @user.save
+      @user.save # save the user
       @user2 = User.new(first_name: "Jane", last_name: "Doe", email: "john@doe.ca", password: "password", password_confirmation: "password")
       expect(@user2).to be_invalid
     end
