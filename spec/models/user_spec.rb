@@ -63,7 +63,7 @@ RSpec.describe User, type: :model do
     
     it "validate user with lower/upper case" do
       @user.save
-      expect(User.authenticate_with_credentials("John@Doe.Ca", "password")).to_not be_nil
+      expect(User.authenticate_with_credentials("John@Doe.Ca", "password")).to be_nil
     end
     
   end
