@@ -28,3 +28,5 @@ class Admin::CategoriesController < ApplicationController
   end
 
 end
+
+# class Admin::CategoriesController < ApplicationController the < means that Admin::CategoriesController inherits from ApplicationController. This means that the Admin::CategoriesController will have all the methods and properties of ApplicationController.
