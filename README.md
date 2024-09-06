@@ -83,3 +83,4 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
     Create a cypress folder in the root of the project. Switch into the newly created directory and add 3 folders named e2e, fixtures and support. Inside the support folder, create a e2e.js file. Cypress looks for this file so, even though we don't need to put anything inside of it, we need to create it.
 
  8. run `bin/rails cypress:open` to open the cypress test runner
+    Once the window opens, select the E2E Testing option followed by selecting Electron. This will open another window where we will be able to run our tests.
