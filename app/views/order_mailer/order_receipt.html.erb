@@ -1,0 +1,13 @@
+<h1>Thank you for your order!</h1>
+<p>Your order ID is: <%= @order.id %></p>
+<hr>
+<h2>Order Summary</h2>
+<% @order.line_items.each do |item| %>
+  <p><strong>Product:</strong> <%= item.product.name %></p>
+  <p><strong>Quantity:</strong> <%= item.quantity %></p>
+  <p><strong>Price:</strong> $<%= item.item_price_cents / 100.00%></p>
+  <br>
+<% end %>
+<hr>
+<h3>Total: $<%= @order.total_cents / 100.00 %></h3>
+<p>We hope you enjoy your purchase!</p>
